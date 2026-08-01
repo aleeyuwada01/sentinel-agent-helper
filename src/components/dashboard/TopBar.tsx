@@ -1,4 +1,4 @@
-import { Bell, Radio, Shield, Signal, TrendingUp, MessageSquare, Database, ShieldCheck, LogOut, User, Globe2, Landmark } from 'lucide-react';
+import { Bell, Radio, Signal, TrendingUp, MessageSquare, Database, ShieldCheck, LogOut, User, Globe2, Landmark } from 'lucide-react';
 import { roleLabels, scopeSummary } from '@/data/accessControl';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from '@tanstack/react-router';
@@ -21,7 +21,7 @@ const TopBar = () => {
       <div className="flex items-center justify-between px-6 py-3">
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <Shield className="h-8 w-8 text-primary" />
+            <img src="/logo.jpeg" alt="Logo" className="h-8 w-8 object-contain rounded" />
             <div>
               <h1 className="text-lg font-bold tracking-tight text-foreground">
                 WA<span className="text-primary">MHEWS</span>{' '}
