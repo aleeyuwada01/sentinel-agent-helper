@@ -1,0 +1,55 @@
+# ─────────────────────────────────────────────────────────
+# Netlify Build Configuration
+# WAMHEWS — West Africa Multi-Hazard Early Warning System
+# ─────────────────────────────────────────────────────────
+
+[build]
+  command   = "npm run build"
+  publish   = ".output/public"
+  functions = ".output/server"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# ─────────────────────────────────────────────────────────
+# Security Headers — applied to all responses
+# ─────────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options         = "DENY"
+    X-Content-Type-Options  = "nosniff"
+    X-XSS-Protection        = "1; mode=block"
+    Referrer-Policy         = "strict-origin-when-cross-origin"
+    Permissions-Policy      = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "frame-ancestors 'none'"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+# ─────────────────────────────────────────────────────────
+# Cache Control — hashed assets get long-lived caching
+# ─────────────────────────────────────────────────────────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML & root — never cache stale markup
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ─────────────────────────────────────────────────────────
+# Redirects — SPA fallback for client-side routing
+# Nitro handles SSR routes via functions; this catches
+# anything that falls through (e.g. direct URL access).
+# ─────────────────────────────────────────────────────────
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
