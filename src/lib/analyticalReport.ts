@@ -1,4 +1,4 @@
-import { jsPDF } from 'jspdf';
+
 import { toCsv, downloadBlob } from './csv';
 import {
   boundaryLabels,
@@ -79,7 +79,8 @@ export const downloadAnalyticalCsv = (country: CountryProfile) => {
   );
 };
 
-export const downloadAnalyticalPdf = (country: CountryProfile) => {
+export const downloadAnalyticalPdf = async (country: CountryProfile) => {
+  const { jsPDF } = await import('jspdf');
   const { kpi, exp, incidents, labels, summary, subs } = analyticalRows(country);
   const doc = new jsPDF({ unit: 'pt', format: 'a4' });
   const margin = 44;
@@ -201,7 +202,8 @@ export const downloadRegionalCsv = () => {
   downloadBlob('wamhews-regional-comparison.csv', 'text/csv;charset=utf-8', toCsv(headers, rows));
 };
 
-export const downloadRegionalPdf = () => {
+export const downloadRegionalPdf = async () => {
+  const { jsPDF } = await import('jspdf');
   const doc = new jsPDF({ unit: 'pt', format: 'a4' });
   const margin = 44;
   const width = doc.internal.pageSize.getWidth();

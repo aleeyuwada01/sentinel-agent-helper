@@ -277,10 +277,11 @@ const buildIncidents = (code: CountryCode): Incident[] => {
     const seed = `${code}-inc-${s.name}-${i}`;
     const meta = causeByHazard[hazard];
     const { reading, threshold } = readingFor(hazard, seed);
-    const agency = pick(`${seed}-ag`, [
+    const agencyObj = pick(`${seed}-ag`, [
       country.agencies[hazard === 'flood' ? 0 : hazard === 'heatwave' || hazard === 'drought' ? 1 : hazard === 'epidemic' ? 3 : 7],
       country.agencies[2],
-    ]).name;
+    ]);
+    const agency = agencyObj?.name || country.leadAgency;
     const targeted = s.households;
     const reached = s.householdsReached;
     const level = s.risk[hazard] >= 78 ? 'red' : s.risk[hazard] >= 58 ? 'orange' : 'yellow';

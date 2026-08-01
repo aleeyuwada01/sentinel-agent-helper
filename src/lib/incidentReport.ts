@@ -1,4 +1,4 @@
-import { jsPDF } from 'jspdf';
+
 import { toCsv, downloadBlob } from './csv';
 import type { Incident } from '@/data/adminBoundaries';
 import type { BoundaryLabels } from '@/data/adminBoundaries';
@@ -59,7 +59,8 @@ export const downloadIncidentsCsv = (incidents: Incident[], filename: string) =>
   downloadBlob(filename, 'text/csv;charset=utf-8', toCsv(headers, rows));
 };
 
-export const downloadIncidentPdf = (incident: Incident, labels: BoundaryLabels, countryName: string) => {
+export const downloadIncidentPdf = async (incident: Incident, labels: BoundaryLabels, countryName: string) => {
+  const { jsPDF } = await import('jspdf');
   const doc = new jsPDF({ unit: 'pt', format: 'a4' });
   const margin = 48;
   const width = doc.internal.pageSize.getWidth();
