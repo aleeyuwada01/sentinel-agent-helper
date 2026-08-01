@@ -5,8 +5,7 @@
 
 [build]
   command   = "npm run build"
-  publish   = ".output/public"
-  functions = ".output/server"
+  publish   = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
