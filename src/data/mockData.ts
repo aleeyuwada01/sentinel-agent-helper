@@ -330,11 +330,12 @@ export const agencies: Agency[] = [
   { code: 'NIHSA', name: 'NIHSA', fullName: 'Nigeria Hydrological Services Agency', role: 'Hydrological data & flood forecasting', activeAlerts: 14, personnelDeployed: 320 },
   { code: 'NIMET', name: 'NiMet', fullName: 'Nigerian Meteorological Agency', role: 'Weather forecasting & climate data', activeAlerts: 8, personnelDeployed: 180 },
   { code: 'NEMA', name: 'NEMA', fullName: 'National Emergency Management Agency', role: 'Lead Agency — Emergency response coordination', activeAlerts: 22, personnelDeployed: 540 },
-  { code: 'NCDC', name: 'NCDC', fullName: 'Nigeria Centre for Disease Control', role: 'Epidemic surveillance & response', activeAlerts: 5, personnelDeployed: 210 },
+  // HIDDEN — uncomment to re-enable:
+  // { code: 'NCDC', name: 'NCDC', fullName: 'Nigeria Centre for Disease Control', role: 'Epidemic surveillance & response', activeAlerts: 5, personnelDeployed: 210 },
   { code: 'NOA', name: 'NOA', fullName: 'National Orientation Agency', role: 'Public awareness & sensitization', activeAlerts: 3, personnelDeployed: 450 },
-  { code: 'SEMA', name: 'SEMA', fullName: 'State Emergency Management Agency', role: 'State-level emergency coordination', activeAlerts: 18, personnelDeployed: 860 },
-  { code: 'LEMA', name: 'LEMA', fullName: 'Local Emergency Management Agency', role: 'LGA-level response & community liaison', activeAlerts: 31, personnelDeployed: 1200 },
-  { code: 'FFS', name: 'FFS', fullName: 'Federal Fire Service', role: 'Fire prevention, suppression & rescue operations', activeAlerts: 11, personnelDeployed: 620 },
+  // { code: 'SEMA', name: 'SEMA', fullName: 'State Emergency Management Agency', role: 'State-level emergency coordination', activeAlerts: 18, personnelDeployed: 860 },
+  // { code: 'LEMA', name: 'LEMA', fullName: 'Local Emergency Management Agency', role: 'LGA-level response & community liaison', activeAlerts: 31, personnelDeployed: 1200 },
+  // { code: 'FFS', name: 'FFS', fullName: 'Federal Fire Service', role: 'Fire prevention, suppression & rescue operations', activeAlerts: 11, personnelDeployed: 620 },
 ];
 
 export type DiseaseType = 'Cholera' | 'Lassa Fever' | 'Measles' | 'Meningitis' | 'Yellow Fever';

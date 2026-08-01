@@ -13,20 +13,22 @@ const agencyColorMap: Record<string, string> = {
   NIHSA: 'text-agency-nihsa',
   NIMET: 'text-agency-nimet',
   NEMA: 'text-agency-nema',
-  NCDC: 'text-agency-ncdc',
+  // HIDDEN — uncomment to re-enable:
+  // NCDC: 'text-agency-ncdc',
   NOA: 'text-agency-noa',
-  SEMA: 'text-agency-sema',
-  LEMA: 'text-agency-lema',
+  // SEMA: 'text-agency-sema',
+  // LEMA: 'text-agency-lema',
 };
 
 const agencyBgMap: Record<string, string> = {
   NIHSA: 'bg-agency-nihsa/10 border-agency-nihsa/30',
   NIMET: 'bg-agency-nimet/10 border-agency-nimet/30',
   NEMA: 'bg-agency-nema/10 border-agency-nema/30',
-  NCDC: 'bg-agency-ncdc/10 border-agency-ncdc/30',
+  // HIDDEN — uncomment to re-enable:
+  // NCDC: 'bg-agency-ncdc/10 border-agency-ncdc/30',
   NOA: 'bg-agency-noa/10 border-agency-noa/30',
-  SEMA: 'bg-agency-sema/10 border-agency-sema/30',
-  LEMA: 'bg-agency-lema/10 border-agency-lema/30',
+  // SEMA: 'bg-agency-sema/10 border-agency-sema/30',
+  // LEMA: 'bg-agency-lema/10 border-agency-lema/30',
 };
 
 const AgencyDashboard = () => {

@@ -6,10 +6,11 @@ const agencyBorderColors: Record<string, string> = {
   NIHSA: 'border-l-agency-nihsa',
   NIMET: 'border-l-agency-nimet',
   NEMA: 'border-l-agency-nema',
-  NCDC: 'border-l-agency-ncdc',
+  // HIDDEN — uncomment to re-enable:
+  // NCDC: 'border-l-agency-ncdc',
   NOA: 'border-l-agency-noa',
-  SEMA: 'border-l-agency-sema',
-  LEMA: 'border-l-agency-lema',
+  // SEMA: 'border-l-agency-sema',
+  // LEMA: 'border-l-agency-lema',
 };
 
 const AgencySummary = () => {

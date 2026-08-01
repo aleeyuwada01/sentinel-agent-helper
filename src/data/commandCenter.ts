@@ -21,11 +21,12 @@ const heads: Record<CountryCode, readonly string[]> = {
     'Engr. Umar Ibrahim Mohammed',
     'Prof. Charles Anosike',
     'Mrs. Zubaida Umar',
-    'Dr. Jide Idris',
+    // HIDDEN — uncomment when re-enabling agencies:
+    // 'Dr. Jide Idris',          // NCDC
     'Mallam Issa Abdullahi',
-    'Dr. Olufemi Oke-Osanyintolu',
-    'Barr. Ngozi Onwuachu',
-    'Engr. Abdulganiyu Jaji',
+    // 'Dr. Olufemi Oke-Osanyintolu', // SEMA
+    // 'Barr. Ngozi Onwuachu',       // LEMA
+    // 'Engr. Abdulganiyu Jaji',     // FFS
   ],
   GH: [
     'Ing. Richard Amo Yartey',
@@ -41,21 +42,23 @@ const heads: Record<CountryCode, readonly string[]> = {
     'Ing. Abdulai Kamara',
     'Mr. Gabriel Kpaka',
     'Mr. Lt. Gen. Brima Sesay',
-    'Prof. Foday Sahr',
+    // HIDDEN — uncomment when re-enabling agencies:
+    // 'Prof. Foday Sahr',        // NPHA
     'Mrs. Isatu Bangura',
-    'Mr. Alusine Koroma',
-    'Mr. Sorie Turay',
-    'CFO Mohamed Conteh',
+    // 'Mr. Alusine Koroma',       // PDMC
+    // 'Mr. Sorie Turay',          // DDMC
+    // 'CFO Mohamed Conteh',       // SLNFF
   ],
   CI: [
     'M. Kouassi N’Guessan',
     'M. Daouda Konaté',
     'Colonel-Major Yao Kouassi',
-    'Prof. Mireille Dosso',
+    // HIDDEN — uncomment when re-enabling agencies:
+    // 'Prof. Mireille Dosso',     // INHP
     'M. Brou Aka Pascal',
-    'Mme. Adjoua Traoré',
-    'M. Souleymane Bamba',
-    'Colonel Konan Diarra',
+    // 'Mme. Adjoua Traoré',       // CRD
+    // 'M. Souleymane Bamba',      // CDL
+    // 'Colonel Konan Diarra',     // GSPM
   ],
 };
 

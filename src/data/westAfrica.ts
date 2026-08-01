@@ -212,22 +212,24 @@ const sierraLeoneAgencies: Agency[] = [
   { code: 'MWR', name: 'MWR-HYD', fullName: 'Ministry of Water Resources — Hydrology Directorate', role: 'Lead Agency — Hydrological data & flood forecasting', activeAlerts: 8, personnelDeployed: 90 },
   { code: 'SLMET', name: 'SLMet', fullName: 'Sierra Leone Meteorological Agency', role: 'Weather forecasting & climate data', activeAlerts: 6, personnelDeployed: 70 },
   { code: 'NDMA', name: 'NDMA', fullName: 'National Disaster Management Agency', role: 'Emergency response coordination', activeAlerts: 15, personnelDeployed: 260 },
-  { code: 'NPHA', name: 'NPHA', fullName: 'National Public Health Agency', role: 'Epidemic surveillance & response', activeAlerts: 7, personnelDeployed: 140 },
+  // HIDDEN — uncomment to re-enable:
+  // { code: 'NPHA', name: 'NPHA', fullName: 'National Public Health Agency', role: 'Epidemic surveillance & response', activeAlerts: 7, personnelDeployed: 140 },
   { code: 'MIC', name: 'MIC', fullName: 'Ministry of Information & Civic Education', role: 'Public awareness & sensitization', activeAlerts: 2, personnelDeployed: 160 },
-  { code: 'PDMC', name: 'PDMC', fullName: 'Provincial Disaster Management Committees', role: 'Provincial emergency coordination', activeAlerts: 10, personnelDeployed: 220 },
-  { code: 'DDMC', name: 'DDMC', fullName: 'District Disaster Management Committees', role: 'District response & community liaison', activeAlerts: 17, personnelDeployed: 380 },
-  { code: 'SLNFF', name: 'SLNFF', fullName: 'Sierra Leone National Fire Force', role: 'Fire prevention, suppression & rescue operations', activeAlerts: 6, personnelDeployed: 190 },
+  // { code: 'PDMC', name: 'PDMC', fullName: 'Provincial Disaster Management Committees', role: 'Provincial emergency coordination', activeAlerts: 10, personnelDeployed: 220 },
+  // { code: 'DDMC', name: 'DDMC', fullName: 'District Disaster Management Committees', role: 'District response & community liaison', activeAlerts: 17, personnelDeployed: 380 },
+  // { code: 'SLNFF', name: 'SLNFF', fullName: 'Sierra Leone National Fire Force', role: 'Fire prevention, suppression & rescue operations', activeAlerts: 6, personnelDeployed: 190 },
 ];
 
 const coteDIvoireAgencies: Agency[] = [
   { code: 'DGRE', name: 'DGRE', fullName: 'Direction Générale des Ressources en Eau', role: 'Lead Agency — Hydrological data & flood forecasting', activeAlerts: 10, personnelDeployed: 150 },
   { code: 'SODEXAM', name: 'SODEXAM', fullName: 'Société d\'Exploitation et de Développement Aéroportuaire, Aéronautique et Météorologique', role: 'Weather forecasting & climate data', activeAlerts: 8, personnelDeployed: 130 },
   { code: 'ONPC', name: 'ONPC', fullName: 'Office National de la Protection Civile', role: 'Emergency response coordination', activeAlerts: 18, personnelDeployed: 430 },
-  { code: 'INHP', name: 'INHP', fullName: 'Institut National d\'Hygiène Publique', role: 'Epidemic surveillance & response', activeAlerts: 5, personnelDeployed: 175 },
+  // HIDDEN — uncomment to re-enable:
+  // { code: 'INHP', name: 'INHP', fullName: 'Institut National d\'Hygiène Publique', role: 'Epidemic surveillance & response', activeAlerts: 5, personnelDeployed: 175 },
   { code: 'CICG', name: 'CICG', fullName: 'Centre d\'Information et de Communication Gouvernementale', role: 'Public awareness & sensitization', activeAlerts: 3, personnelDeployed: 260 },
-  { code: 'CRD', name: 'CR-DIST', fullName: 'Conseils Régionaux / Districts Autonomes', role: 'Regional emergency coordination', activeAlerts: 13, personnelDeployed: 520 },
-  { code: 'CDL', name: 'CDL', fullName: 'Comités Départementaux Locaux', role: 'Departmental response & community liaison', activeAlerts: 20, personnelDeployed: 700 },
-  { code: 'GSPM', name: 'GSPM', fullName: 'Groupement des Sapeurs-Pompiers Militaires', role: 'Fire prevention, suppression & rescue operations', activeAlerts: 10, personnelDeployed: 480 },
+  // { code: 'CRD', name: 'CR-DIST', fullName: 'Conseils Régionaux / Districts Autonomes', role: 'Regional emergency coordination', activeAlerts: 13, personnelDeployed: 520 },
+  // { code: 'CDL', name: 'CDL', fullName: 'Comités Départementaux Locaux', role: 'Departmental response & community liaison', activeAlerts: 20, personnelDeployed: 700 },
+  // { code: 'GSPM', name: 'GSPM', fullName: 'Groupement des Sapeurs-Pompiers Militaires', role: 'Fire prevention, suppression & rescue operations', activeAlerts: 10, personnelDeployed: 480 },
 ];
 
 /* ------------------------------------------------------------ STATION FEEDS */

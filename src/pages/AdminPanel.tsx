@@ -120,10 +120,11 @@ const AdminPanel = () => {
                     <option value="NIHSA">NIHSA</option>
                     <option value="NIMET">NiMet</option>
                     <option value="NEMA">NEMA</option>
-                    <option value="NCDC">NCDC</option>
+                    {/* HIDDEN — uncomment to re-enable: */}
+                    {/* <option value="NCDC">NCDC</option> */}
                     <option value="NOA">NOA</option>
-                    <option value="SEMA">SEMA</option>
-                    <option value="LEMA">LEMA</option>
+                    {/* <option value="SEMA">SEMA</option> */}
+                    {/* <option value="LEMA">LEMA</option> */}
                   </select>
                 </div>
               </div>

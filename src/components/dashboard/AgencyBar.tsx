@@ -6,11 +6,12 @@ const agencyColors: Record<string, string> = {
   NIHSA: 'bg-agency-nihsa',
   NIMET: 'bg-agency-nimet',
   NEMA: 'bg-agency-nema',
-  NCDC: 'bg-agency-ncdc',
+  // HIDDEN — uncomment to re-enable:
+  // NCDC: 'bg-agency-ncdc',
   NOA: 'bg-agency-noa',
-  SEMA: 'bg-agency-sema',
-  LEMA: 'bg-agency-lema',
-  FFS: 'bg-agency-ffs',
+  // SEMA: 'bg-agency-sema',
+  // LEMA: 'bg-agency-lema',
+  // FFS: 'bg-agency-ffs',
 };
 
 const AgencyBar = () => {

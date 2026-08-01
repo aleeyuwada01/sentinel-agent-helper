@@ -3,11 +3,12 @@ import AgencyBar from '@/components/dashboard/AgencyBar';
 import HazardCard from '@/components/dashboard/HazardCard';
 import NIHSAPanel from '@/components/dashboard/NIHSAPanel';
 import NIMETPanel from '@/components/dashboard/NIMETPanel';
-import FFSPanel from '@/components/dashboard/FFSPanel';
-import NCDCPanel from '@/components/dashboard/NCDCPanel';
+// HIDDEN — uncomment to re-enable:
+// import FFSPanel from '@/components/dashboard/FFSPanel';
+// import NCDCPanel from '@/components/dashboard/NCDCPanel';
 import NEMAPanel from '@/components/dashboard/NEMAPanel';
 import NOAPanel from '@/components/dashboard/NOAPanel';
-import SEMAPanel from '@/components/dashboard/SEMAPanel';
+// import SEMAPanel from '@/components/dashboard/SEMAPanel';
 import DisseminationPanel from '@/components/dashboard/DisseminationPanel';
 import GeoMap from '@/components/dashboard/GeoMap';
 import AgencySummary from '@/components/dashboard/AgencySummary';
@@ -83,12 +84,13 @@ const Index = () => {
           <NIMETPanel />
         </section>
 
-        <FFSPanel />
-        <NCDCPanel />
+        {/* HIDDEN — uncomment to re-enable: */}
+        {/* <FFSPanel /> */}
+        {/* <NCDCPanel /> */}
         <NEMAPanel />
 
         <section className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-          <SEMAPanel />
+          {/* <SEMAPanel /> */}
           <NOAPanel />
         </section>
 
